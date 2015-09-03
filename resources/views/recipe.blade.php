@@ -4,6 +4,7 @@
         <title>Recipe Page</title>
     </head>
     <body>
-        Recipe {{ $id }}
+        Recipe {{ $recipe->id }}
+        Recipe {{ $recipe->name }}
     </body>
 </html>

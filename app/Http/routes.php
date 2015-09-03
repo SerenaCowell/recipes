@@ -12,4 +12,5 @@
 */
 
 Route::get('/','RecipesController@index');
-Route::get('/{id}','RecipesController@recipe');
+Route::get('/recipe/{id}','RecipesController@recipe');
+Route::get('/about', 'AboutController@about');

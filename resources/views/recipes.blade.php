@@ -4,6 +4,10 @@
         <title>Recipes</title>
     </head>
     <body>
-        Recipes
+
+        @foreach ($recipes as $recipe)
+		    <p><a href="/recipe/{{$recipe->id}}">{{ $recipe->name }}</a>
+		    </p>
+		@endforeach
     </body>
 </html>
